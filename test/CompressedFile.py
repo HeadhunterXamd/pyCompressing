@@ -12,3 +12,7 @@ class CompressedFile:
 
 	def Decompress(self, file):
 		return None
+
+
+# this is a simple byte read to dict algorithm, 
+# only for myself, I don't know if it will make things smaller or not.
