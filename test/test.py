@@ -1,6 +1,7 @@
 from Compressor import Compressor
+import CompressedFile
 
+#c = Compressor()
 
-c = Compressor()
+#c.getFileData()
 
-c.getFileData()

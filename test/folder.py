@@ -6,8 +6,13 @@ class directory:
 		objectify the foldersystem
 	"""
 
-	def __init__(self, path):
-		self.basepath = self.makepath()+path
+	def __init__(self, path=None):
+		""" create or have a folder selected. """
+		if path == None:
+			self.basepath = self.makepath(True)
+		else:
+			self.basepath = self.makepath()+path
+
 		self.index = len(self.makepath(False))
 		if not self.exists():
 			self.makedirectory()
@@ -24,10 +29,8 @@ class directory:
 		path = path.replace("\\", "/")
 		pathsplit = path.split("/")
 		correctDir = ""
-		# if "/" in path[0]:
-			# correctDir += "/"
 
-		for i in range(0, ((len(pathsplit) - 1))):
+		for i in range(0, ((len(pathsplit)))):
 				correctDir += pathsplit[i] + "/"
 
 		if string:
