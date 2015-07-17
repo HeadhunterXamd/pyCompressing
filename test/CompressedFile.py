@@ -1,6 +1,14 @@
 from folder import directory
-import os
 
-map = directory()
 
-print(map.basepath)
+class CompressedFile:
+
+	def __init__(self, file):
+		self.filename = file
+		self.dir = directory()
+
+	def Compress(self):
+		return None
+
+	def Decompress(self, file):
+		return None
