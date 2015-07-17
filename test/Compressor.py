@@ -25,5 +25,6 @@ class Compressor:
 
 		return newPath
 
-	def CompressFile(self, filename=self.filename):
-		pass
+	def CompressFile(self, filename=None):
+		if filename == None:
+			filename = self.fileName
