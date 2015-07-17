@@ -22,10 +22,19 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CompressedFile.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Compressor.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="folder.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="test.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="license.txt" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
